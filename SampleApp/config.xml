@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.transistorsoft.backgroundgeolocation" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Cordova Background GeoLocation</name>
+<widget id="com.transistorsoft.backgroundgeolocation" version="0.0.1"
+		xmlns:gap="http://phonegap.com/ns/1.0" 
+		xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Simple Sample bgGeo</name>
     <description>
         A minimal example of cordova BackgroundGeoLocation plugin.
     </description>
@@ -23,5 +25,19 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+	
+	
+	
+	
+	<!-- <preference name="phonegap-version" value="3.4.0"/>  2015-05-12: we use 3.7.0 -->
+	<gap:platform name="android" />
+	
+	<!-- Android only: true: do not stop timers in background  -->
+	<preference name="KeepRunning" value="true"/>
+
+	<!-- background geo location iOS, Android, Windows: github LogicsSoftware, based on transistorsoft (or christocracy) -->
+	<gap:plugin name="de.logics.cordova.background-geolocation" /> <!-- branch=pgb: the PGB compatible version, eg "0.5.70" --> 
+	<preference name="android-minSdkVersion" value="9" />	<!-- bgGeo requires API Level 9 (Android 2.3/.1/.2); default is 7 (Android 2.1)  -->
+
 
 </widget>
