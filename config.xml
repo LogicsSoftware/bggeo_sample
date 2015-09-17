@@ -31,6 +31,7 @@
 	
 	<!-- <preference name="phonegap-version" value="3.4.0"/>  2015-05-12: we use 3.7.0 -->
 	<gap:platform name="android" />
+	<preference name='phonegap-version' value='cli-5.1.1' />
 	
 	<!-- Android only: true: do not stop timers in background  -->
 	<!-- <preference name="KeepRunning" value="true"/> -->
