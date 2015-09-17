@@ -34,6 +34,7 @@
 	
 	<!-- Android only: true: do not stop timers in background  -->
 	<!-- <preference name="KeepRunning" value="true"/> -->
+	<preference name="AndroidLaunchMode" value="singleTop"/> <!-- https://cordova.apache.org/docs/en/5.1.1/guide_platforms_android_config.md.html#Android%20Configuration -->
 
 	<!-- background geo location iOS, Android, Windows: github LogicsSoftware, based on transistorsoft (or christocracy) -->
 	<gap:plugin name="de.logics.cordova.background-geolocation" /> <!-- branch=pgb: the PGB compatible version, eg "0.5.70" --> 
