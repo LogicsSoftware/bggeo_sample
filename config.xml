@@ -33,7 +33,7 @@
 	<gap:platform name="android" />
 	
 	<!-- Android only: true: do not stop timers in background  -->
-	<preference name="KeepRunning" value="true"/>
+	<!-- <preference name="KeepRunning" value="true"/> -->
 
 	<!-- background geo location iOS, Android, Windows: github LogicsSoftware, based on transistorsoft (or christocracy) -->
 	<gap:plugin name="de.logics.cordova.background-geolocation" /> <!-- branch=pgb: the PGB compatible version, eg "0.5.70" --> 
